@@ -30,8 +30,10 @@ class TreeNodeTest {
   public void convertTest() {
     List<TreeNode> treeNodeList = generateTreeNodeList();
     System.out.println("generateTreeNodeList finish "  + treeNodeList);
-    Tree tree = Converter.convertListToTree(treeNodeList,
-        Comparator.comparing(o -> ((Tag) o.getRoot()).getOrder()));
+    Tree tree = Converter.convertListToTree(treeNodeList);
     System.out.println("convertListToTree finish " + tree);
+    Tree orderedTree = Converter.convertListToTree(treeNodeList,
+        Comparator.comparing(o -> ((Tag) o.getRoot()).getOrder()));
+    System.out.println("convertListToTree finish orderedTree " + tree);
   }
 }
