@@ -34,6 +34,6 @@ class TreeNodeTest {
     System.out.println("convertListToTree finish " + tree);
     Tree orderedTree = Converter.convertListToTree(treeNodeList,
         Comparator.comparing(o -> ((Tag) o.getRoot()).getOrder()));
-    System.out.println("convertListToTree finish orderedTree " + tree);
+    System.out.println("convertListToTree finish orderedTree " + orderedTree);
   }
 }

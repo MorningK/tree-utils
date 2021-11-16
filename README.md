@@ -1,5 +1,5 @@
 # tree-utils
-a java utils convert list to tree 
+a java util convert list to tree 
 
 ## Interface TreeNode
 ```

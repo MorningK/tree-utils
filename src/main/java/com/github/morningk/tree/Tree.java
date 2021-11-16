@@ -2,6 +2,10 @@ package com.github.morningk.tree;
 
 import java.util.List;
 
+/**
+ * Type of Tree
+ * contain a TreeNode root and its subTrees children
+ */
 public class Tree {
   private TreeNode root;
   private List<Tree> children;

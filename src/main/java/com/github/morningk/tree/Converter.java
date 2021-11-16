@@ -1,15 +1,29 @@
 package com.github.morningk.tree;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * the util used to convert List to Tree
+ */
 public class Converter {
+
+  /**
+   * convert given tree node list to tree
+   * @param treeNodeList TreeNodeList
+   * @return tree
+   */
   public static Tree convertListToTree(List<TreeNode> treeNodeList) {
     return convertListToTree(treeNodeList, null);
   }
 
+  /**
+   * convert given tree node list to tree and sorted by comparator
+   * @param treeNodeList TreeNodeList
+   * @param comparator the comparator sort tree
+   * @return sorted tree
+   */
   public static Tree convertListToTree(List<TreeNode> treeNodeList, Comparator<Tree> comparator) {
     Tree tree = new Tree();
     if (treeNodeList == null || treeNodeList.isEmpty()) {
