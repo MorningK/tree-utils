@@ -1,4 +1,4 @@
-package com.github.morningk.tree;
+package io.github.morningk.tree;
 
 /**
  * Type of TreeNode

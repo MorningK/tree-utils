@@ -1,4 +1,4 @@
-package com.github.morningk.tree;
+package io.github.morningk.tree;
 
 public class Tag implements TreeNode {
   private Long id;
