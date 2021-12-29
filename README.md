@@ -23,6 +23,23 @@ public static Tree convertListToTree(List<TreeNode> treeNodeList);
 public static Tree convertListToTree(List<TreeNode> treeNodeList, Comparator<Tree> comparator);
 ```
 ## Usage
+
+### Adding dependency
+using Maven
+```
+<!-- https://mvnrepository.com/artifact/io.github.morningk/tree-utils -->
+<dependency>
+    <groupId>io.github.morningk</groupId>
+    <artifactId>tree-utils</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+using Gradle
+```
+// https://mvnrepository.com/artifact/io.github.morningk/tree-utils
+implementation 'io.github.morningk:tree-utils:1.0.0'
+```
+### example
 ``` 
 public class Tag implements TreeNode {
   private Long id;
